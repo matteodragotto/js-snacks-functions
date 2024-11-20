@@ -8,10 +8,10 @@ const firstLetter = 'A'
 let arrayA = []
 
 function startsWithA(namesArray, initial){
+  let arrayA = []
   for (let i = 0; i < namesArray.length; i++){
-    if (namesArray[i].substring(0, 1) === initial) {
-      
-      arrayA.push = namesArray[i]
+    if (namesArray[i][0] === initial) {      
+      arrayA.push(namesArray[i])
     }
   }
   return arrayA
