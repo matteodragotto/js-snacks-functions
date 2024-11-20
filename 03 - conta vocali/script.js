@@ -11,7 +11,7 @@ function numbersOfVocals (string){
   const stringArray = string.split("");
   let counter = 0;
     for (let i = 0; i < stringArray.length; i++){      
-      if (stringArray[i].includes(vocals))
+      if (vocals.includes(stringArray[i]))
       counter++  
     }
   return counter
