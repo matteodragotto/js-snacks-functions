@@ -9,6 +9,19 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+const d = new Date();
+console.log(hello(name));
+
+function hello(personName) {
+  if (d.getHours > 7 && d.getHours < 13) {
+    return 'Buongiorno' + ' ' + personName
+  } else if (d.getHours > 13 && d.getHours < 17) {
+    return 'Buon pomeriggio' + ' ' + personName
+  } else {
+    return 'Buonasera' + ' ' + personName
+  }
+    
+} 
 
 
 // Invoca la funzione qui e stampa il risultato in console
