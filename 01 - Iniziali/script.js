@@ -9,9 +9,9 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 // Dichiara la funzione qui
 
 function startingLetter(namesArrey) {
-  let initial;
+  let initial = []
   for (let i = 0; i < namesArrey.length; i++){
-    initial = namesArrey[i]
+    initial.push(namesArrey[i][0])
 
   }
   return initial
